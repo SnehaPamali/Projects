@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<h2>Registration Form</h2>
+<form id="registrationForm">
+
+    <!-- User ID (mandatory) -->
+    <label for="userid">User ID:</label><br>
+    <input type="text" id="userid" name="userid" required><br><br>
+
+    <!-- Password -->
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <!-- Confirm Password -->
+    <label for="confirmPassword">Confirm Password:</label><br>
+    <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+
+    <!-- First Name (mandatory) -->
+    <label for="firstname">First Name (mandatory):</label><br>
+    <input type="text" id="firstname" name="firstname" required><br><br>
+
+    <!-- Last Name -->
+    <label for="lastname">Last Name:</label><br>
+    <input type="text" id="lastname" name="lastname"><br><br>
+
+    <!-- Date of Birth -->
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob"><br><br>
+
+    <!-- Gender -->
+    <label for="gender">Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male" required> Male
+    <input type="radio" id="female" name="gender" value="female" required> Female<br><br>
+
+    <!-- Address -->
+    <label for="address">Address:</label><br>
+    <input type="text" id="address" name="address"><br><br>
+
+    <!-- Country -->
+    <label for="country">Country:</label><br>
+    <input type="text" id="country" name="country"><br><br>
+
+    <!-- Phone Number (10 digits) -->
+    <label for="phone">Phone Number (10 digits):</label><br>
+    <input type="text" id="phone" name="phone" pattern="[0-9]{10}" title="Phone number must be 10 digits" required><br><br>
+
+    <!-- Email ID -->
+    <label for="email">Email ID:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Submit Button -->
+    <button type="submit">Register</button>
+
+
+</form>
+
+<br>
+<br>
+<div class="nav">
+    <a href="about.html">About Us</a>
+    <a href="courses.html">Courses</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+</body>
+</html>
